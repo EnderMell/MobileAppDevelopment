@@ -1,0 +1,207 @@
+/* Algemene body-styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 20px;
+}
+
+.color-btn {
+    width: 100px;
+    height: 100px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.1s ease;
+}
+
+.color-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Verschillende kleuren voor de knoppen */
+.color-btn:nth-child(1) { background-color: #e2f1ee; } 
+.color-btn:nth-child(2) { background-color: #c5e8e1; } 
+.color-btn:nth-child(3) { background-color: #8bd0c2; } 
+.color-btn:nth-child(4) { background-color: #3eb59d; } 
+.color-btn:nth-child(5) { background-color: #1b7865; } 
+.color-btn:nth-child(6) { background-color: #1d695f; }
+.color-btn:nth-child(7) { background-color: #1e5a59; } 
+.color-btn:nth-child(8) { background-color: #213c4c; } 
+.color-btn:nth-child(9) { background-color: #260033; } 
+
+/* Container voor de customize-pagina */
+.container {
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin-top:250px;
+
+}
+
+/* Titel styling */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Geluid upload sectie */
+.sound-upload {
+    margin-bottom: 15px;
+}
+
+.sound-upload label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.sound-upload input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+.sound-upload input[type="file"]:hover {
+    background-color: #e6e6e6;
+    border-color: #ae4545;
+}
+
+/* Algemeen button styling */
+button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Specifieke button styling */
+.save-btn {
+    background-color: #1b7865;
+}
+
+.save-btn:hover {
+    background-color: #1e5a59;
+}
+
+.back-btn {
+    background-color: #1b7865;
+}
+
+.back-btn:hover {
+    background-color: #1e5a59;
+}
+
+/* Light/Dark mode en Customize buttons container */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Styling voor de light/dark mode en customize buttons */
+#mode-toggle, #customize-sounds {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#mode-toggle {
+    background-color: #333;
+    color: white;
+}
+
+#customize-sounds {
+    background-color: #1b7865;
+    color: white;
+}
+
+#mode-toggle:hover {
+    background-color: #555;
+}
+
+#customize-sounds:hover {
+    background-color: #1b7865;
+}
+
+/* Dark mode styling */
+body.dark-mode {
+    background-color: #181818;
+    color: white;
+}
+
+body.dark-mode .container {
+    background-color: #444;
+    color: white;
+}
+
+body.dark-mode .sound-upload input[type="file"] {
+    background-color: #444;
+    color: white;
+    border-color: #666;
+}
+
+body.dark-mode .sound-upload input[type="file"]:hover {
+    background-color: #555;
+    border-color: #888;
+}
+
+body.dark-mode .save-btn {
+    background-color: #1b7865;
+}
+
+body.dark-mode .save-btn:hover {
+    background-color: #1b7865;
+}
+
+body.dark-mode .back-btn {
+    background-color: #7f8c8d;
+}
+
+body.dark-mode .back-btn:hover {
+    background-color: #707c82;
+}
+
+body.dark-mode #mode-toggle {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+body.dark-mode #customize-sounds {
+    background-color: #1f6f8b;
+}
